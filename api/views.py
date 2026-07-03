@@ -7,7 +7,7 @@ class BookView(APIView):
     def get(self, request):
         return Response({"hello": "django"})
 
-    def post(self, request):
-        pass
+    # def post(self, request):
+    #     pass
 
 book_view = BookView.as_view()
