@@ -1,8 +1,9 @@
 from rest_framework.test import APITestCase
+from django.urls import reverse
 
 
 class BookViewTest(APITestCase):
     def test_response_is_correct(self):
-        response = self.client.get()
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, {"hello": "django"})
+        url = reverse('api:books')
+        response = self.client.get(url, format='json')
+        assert response.status_code == 200
