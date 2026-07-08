@@ -8,6 +8,7 @@ class Book(models.Model):
     published_date = models.DateField()
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    new_field_two = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
         return f"{self.title} by {self.author}"
