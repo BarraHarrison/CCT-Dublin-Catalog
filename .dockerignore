@@ -1,0 +1,16 @@
+.git
+
+.vscode
+
+.venv
+
+db.sqlite3
+
+.env
+
+*.pyc
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
