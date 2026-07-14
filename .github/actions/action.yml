@@ -1,12 +1,9 @@
 name: Install Python and dependencies
-description: Checks out code, sets up Python 3.9 and installs dependencies
+description: Sets up Python 3.9 and installs dependencies
 
 runs:
   using: composite
   steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
     - name: Set up Python
       uses: actions/setup-python@v4
       with:

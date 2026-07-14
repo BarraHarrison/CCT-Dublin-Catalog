@@ -33,6 +33,9 @@ jobs:
           --health-retries 5
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Install Python and dependencies
         uses: ./.github/actions/setup-python-deps
 
@@ -60,6 +63,9 @@ jobs:
           --health-retries 5
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Install Python and dependencies
         uses: ./.github/actions/setup-python-deps
 
@@ -87,6 +93,9 @@ jobs:
           --health-retries 5
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Install Python and dependencies
         uses: ./.github/actions/setup-python-deps
 
